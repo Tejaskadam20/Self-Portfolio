@@ -385,16 +385,27 @@ devices
               	<!---Contact info start---->
               <div class="contact-info-item padd-15">
               	<div class="icon"><i class="fa fa-envelope"></i></div>
-              	<a href="#" id="emailid" onclick="redirecttogmail()"><h4>Click to go to Gmail</h4></a>
+              	<a href="#" id="emailid" onclick="redirecttogmail()"><h4>Email ID</h4></a>
               	<p>tejaskadam7267@gmail.com</p>
               </div>
               	<!---Contact info end---->
               
                </div>
-               <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-               <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                
+                <div class="contain">
+                	
+                	<form onsubmit="sendEmail(); reset(); return false;">
+                		
+                		<h3>GET IN TOUCH</h3>
+                		<input type="text" id="name" placeholder="Your Name" required>
+                		<input type="email" id="email" placeholder="Email Id" required>
+                		<input type="text" id="phone" placeholder="Phone no">
+                		<textarea id="message" rows="4" placeholder="Message"></textarea>
+                		<button type="submit">Send Email</button>
+                	</form>
+                	
 
-            </div>
+                </div>
               </section>
               <!--Contact Section End-->
               
@@ -433,5 +444,26 @@ devices
 	       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"referrerpolicy="no-referrer"></script>
          <script type="text/javascript" src="js/script.js"></script>
          <script type="text/javascript" src="js/style-switcher.js"></script>
+         <script src="script tag to https://smtpjs.com/v3/smtp.js"></script>
+         <script type="text/javascript">
+         	  function sendEmail()
+         	  {
+         	  	Email.send({
+                Host : "smtp.gmail.com",
+                Username : "tejaskadam7267@gmail.com",
+                Password : "",
+                To : 'tejaskadam7267@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "subject",
+                Body : "Name:" +document.getElementById("name").value 
+                +"<br> Email:" +document.getElementById("Email").value
+                +"<br> Phone No:" +document.getElementById("Phone No").value
+                +"<br> Message:" +document.getElementById("Message").value
+
+}).then(
+  message => alert("Message send Successfully")
+);
+         	  }
+         </script>
 </body>
 </html>

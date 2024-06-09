@@ -22,6 +22,12 @@ var typed= new Typed("typing",{
   });
 
 
-const emailLink = document.getElementById("emailid");
-emailLink.addEventListener("click", redirecttogmail);
+document.getElementById('SendEmail').addEventListener('click', function() {
+    const email = 'tejaskadam7267@gmail.com';
+    const subject = 'Subject Text';
+    const body = 'Hello.';
+    const mailtoLink = `mailto:${tejaskadam7267@gmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    window.location.href = mailtoLink;
+});
 </script>
