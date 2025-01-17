@@ -50,7 +50,7 @@
         					<div class="home-info padd-15">
         						<h3 class="hello">Hello, my name <span class="name">Tejas Kadam</span></h3>
         						<h3 class="my-profession">I'am a <span class="typing">ENTC Engineer</span></h3>
-                    <p>With technical Skills HTML,CSS,JavaScript, Bootstrap, Core Java, Adv Java, In Database, Oracle Sql</p>
+                    <p>With technical Skills HTML,CSS,JavaScript, Bootstrap, ReactJS Core Java, Adv Java, In Database, Oracle Sql</p>
                     <a href="#contact" class="btn hire-me">Hire Me</a>
         					</div>
         					<div class="home-img padd-15">
@@ -75,7 +75,8 @@
               					<div class="about-text padd-15">
               						<h3>I'm Tejas Kadam <span>ENTC Engineer</span></h3>
               						<p>
-              							 I'm from Satara, currently i'm pursuing B.E final year in electronics and telecommunication, In pune university. Also i have complete my internship from Anvistar pvt.ltd, In that internship i learned about Java fullstack development course.
+              							 My name is Tejas Kadam, I have completed by bachelors degree from sinhgad college in pune university . In my academics i have completed Training and internship from Anvistar pvt.ltd as Java Full stack developer.
+In that internship i have learn Various technolgies such as HTML,CSS,JavaScript,BootStrap, ReactJS, JQuery, Core Java,Advanced Java, good knowledge about Object oriented programming language and in database i learned Oraclesql. They are my technical skills.
               						</p>
               					</div>
 
@@ -98,7 +99,7 @@
               				 	  			 <p>Phone-No: <span>+91-9834428049</span></p>
               				 	  		</div>
               				 	  		<div class="info-item padd-15">
-              				 	  			 <p>Email: <span>tejaskadam7267@gmail.com</span></p>
+              				 	  			 <p>Email: <span>tejaskadam3462@gmail.com</span></p>
               				 	  		</div>
               				 	  		<div class="info-item padd-15">
               				 	  		  <p>Linkdin: <span>https://www.linkedin.com/in/tejas-kadam-342011248
@@ -145,6 +146,22 @@
               				 	  				<div class="skill-percent">90%</div>
               				 	  			</div>
               				 	  		</div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>JQuery</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 90%"></div>
+                                                <div class="skill-percent">90%</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>ReactJS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 90%"></div>
+                                                <div class="skill-percent">90%</div>
+                                            </div>
+                                        </div>
               				 	  		
 
               				 	  		<div class="skill-item padd-15">
@@ -392,20 +409,37 @@ devices
               
                </div>
                 
-                <div class="contain">
-                	
-                	<form onsubmit="sendEmail(); reset(); return false;">
-                		
-                		<h3>GET IN TOUCH</h3>
-                		<input type="text" id="name" placeholder="Your Name" required>
-                		<input type="email" id="email" placeholder="Email Id" required>
-                		<input type="text" id="phone" placeholder="Phone no">
-                		<textarea id="message" rows="4" placeholder="Message"></textarea>
-                		<button type="submit">Send Email</button>
-                	</form>
-                	
+<div style="max-width: 600px; margin: 50px auto; padding: 30px; background-color: #1a1a1a; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+    <h2 style="text-align: center; color: #FF0000; margin-bottom: 20px;">Contact Us</h2>
+    <form action="send_email.php" method="POST">
+        <!-- Name -->
+        <div style="margin-bottom: 20px;">
+            <label for="name" style="display: block; color: #FF0000; font-weight: bold; margin-bottom: 5px;">Name</label>
+            <input type="text" id="name" name="name" style="width: 100%; padding: 10px; border: 1px solid #FF0000; background-color: #333; color: #fff; border-radius: 5px;" placeholder="Enter your name" required>
+        </div>
 
-                </div>
+        <!-- Email -->
+        <div style="margin-bottom: 20px;">
+            <label for="email" style="display: block; color: #FF0000; font-weight: bold; margin-bottom: 5px;">Email</label>
+            <input type="email" id="email" name="email" style="width: 100%; padding: 10px; border: 1px solid #FF0000; background-color: #333; color: #fff; border-radius: 5px;" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Phone Number -->
+        <div style="margin-bottom: 20px;">
+            <label for="phone" style="display: block; color: #FF0000; font-weight: bold; margin-bottom: 5px;">Phone Number</label>
+            <input type="tel" id="phone" name="phone" style="width: 100%; padding: 10px; border: 1px solid #FF0000; background-color: #333; color: #fff; border-radius: 5px;" placeholder="Enter your phone number" required>
+        </div>
+
+        <!-- Message -->
+        <div style="margin-bottom: 20px;">
+            <label for="message" style="display: block; color: #FF0000; font-weight: bold; margin-bottom: 5px;">Message</label>
+            <textarea id="message" name="message" style="width: 100%; padding: 10px; border: 1px solid #FF0000; background-color: #333; color: #fff; border-radius: 5px;" rows="5" placeholder="Write your message here" required></textarea>
+        </div>
+
+        <!-- Send Email Button -->
+        <button type="submit" style="width: 80%; padding: 10px; background-color: #FF0000; border: none; border-radius: 5px; color: #fff; font-weight: bold; cursor: pointer;">Send Email</button>
+    </form>
+</div>
               </section>
               <!--Contact Section End-->
               

@@ -796,3 +796,33 @@ button:hover
 {
 	transform: scale(1.15);
 }
+
+ .contact-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1ABC9C;
+        }
+
+        .contact-form .form-control {
+            margin-bottom: 15px;
+        }
+
+        .contact-form .btn-primary {
+            background-color: #1ABC9C;
+            border-color: #1ABC9C;
+        }
+
+        .contact-form .btn-primary:hover {
+            background-color: #17A589;
+            border-color: #17A589;
+        }
